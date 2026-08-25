@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Brand Hub - Build. Brand. Belong.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="logo-text">Campus Brand Hub</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link active" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="explore">Explore</a>
+                <a href="#" class="nav-link" data-page="sell">Sell</a>
+                <a href="#" class="nav-link" data-page="services">Services</a>
+                <a href="#" class="nav-link" data-page="marketing">Marketing Tools</a>
+                <a href="#" class="nav-link" data-page="profile">My Profile</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section class="page active" id="home">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Launch Your Campus Business</span>
+                </div>
+                <h1 class="hero-title">Turn Your Campus Skills Into Your Brand.</h1>
+                <p class="hero-subtitle">Build. Brand. Belong. The ultimate platform for student entrepreneurs to showcase, promote, and sell within your campus community.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="showPage('explore')">Explore Campus</button>
+                    <button class="btn btn-secondary" onclick="showPage('sell')">Start Your Brand</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card hero-card-1">
+                    <div class="card-icon"><i class="fas fa-store"></i></div>
+                    <span>250+ Student Businesses</span>
+                </div>
+                <div class="hero-card hero-card-2">
+                    <div class="card-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <span>5,000+ Products</span>
+                </div>
+                <div class="hero-card hero-card-3">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <span>15,000+ Students</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Businesses -->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Student Businesses</h2>
+                    <p>Discover amazing brands built by students like you</p>
+                </div>
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop" alt="Thrift Avenue">
+                            <div class="featured-badge"><i class="fas fa-star"></i> Featured</div>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Thrift Avenue</h3>
+                            <p class="featured-owner">by Chinmayee M • Kristu Jayanti University</p>
+                            <div class="featured-stats">
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                                <span><i class="fas fa-shopping-bag"></i> 120 items</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&h=300&fit=crop" alt="Bake & Bloom">
+                            <div class="featured-badge"><i class="fas fa-fire"></i> Trending</div>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Bake & Bloom</h3>
+                            <p class="featured-owner">by Arjun Mehta • Kristu Jayanti University</p>
+                            <div class="featured-stats">
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                                <span><i class="fas fa-shopping-bag"></i> 85 items</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop" alt="Pixel Perfect">
+                            <div class="featured-badge"><i class="fas fa-bolt"></i> New</div>
+                        </div>
+                        <div class="featured-content">
+                            <h3>Pixel Perfect</h3>
+                            <p class="featured-owner">by Sneha Patel • Kristu Jayanti University</p>
+                            <div class="featured-stats">
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                                <span><i class="fas fa-shopping-bag"></i> 45 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular Categories</h2>
+                    <p>Find what you're looking for</p>
+                </div>
+                <div class="category-grid">
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-tshirt"></i></div>
+                        <h3>Fashion & Thrift</h3>
+                        <p>450+ listings</p>
+                    </div>
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Beauty</h3>
+                        <p>320+ listings</p>
+                    </div>
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-cookie"></i></div>
+                        <h3>Food & Baking</h3>
+                        <p>280+ listings</p>
+                    </div>
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-camera"></i></div>
+                        <h3>Photography</h3>
+                        <p>150+ listings</p>
+                    </div>
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Graphic Design</h3>
+                        <p>200+ listings</p>
+                    </div>
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-book"></i></div>
+                        <h3>Tutoring</h3>
+                        <p>380+ listings</p>
+                    </div>
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-gift"></i></div>
+                        <h3>Handmade Products</h3>
+                        <p>190+ listings</p>
+                    </div>
+                    <div class="category-card" onclick="showPage('explore')">
+                        <div class="category-icon"><i class="fas fa-calendar"></i></div>
+                        <h3>Events & Services</h3>
+                        <p>120+ listings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Start your campus business in 3 simple steps</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><i class="fas fa-user-check"></i></div>
+                        <h3>Verify Your Student Status</h3>
+                        <p>Sign up with your college email and student ID to get verified</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><i class="fas fa-store"></i></div>
+                        <h3>Create Your Brand</h3>
+                        <p>Set up your business profile and add your products or services</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Start Selling & Growing</h3>
+                        <p>Use our marketing tools to reach students across campus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Students Say</h2>
+                    <p>Join thousands of successful campus entrepreneurs</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="chinmayee-profile.png" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop'" alt="Chinmayee M">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Campus Brand Hub helped me turn my baking hobby into a profitable business. I made ₹15,000 in my first month!"</p>
+                            <div class="testimonial-author">
+                                <h4>Chinmayee M</h4>
+                                <p>Bake & Bloom • Kristu Jayanti University</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Rahul">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"The AI marketing tools are amazing! My Instagram engagement increased by 300% after using the caption generator."</p>
+                            <div class="testimonial-author">
+                                <h4>Chinmayee M</h4>
+                                <p>Thrift Avenue • Kristu Jayanti University</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Ananya">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Finally a platform made for students! I found amazing graphic designers for my startup at student-friendly prices."</p>
+                            <div class="testimonial-author">
+                                <h4>Ananya Verma</h4>
+                                <p>Customer • Kristu Jayanti University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <div class="container">
+                <h2>Ready to Start Your Campus Brand?</h2>
+                <p>Join 15,000+ students already building their businesses on Campus Brand Hub</p>
+                <button class="btn btn-primary btn-large" onclick="showPage('sell')">Get Started Free</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Page -->
+    <section class="page" id="explore">
+        <div class="container">
+            <div class="explore-header">
+                <h1>Explore Campus Marketplace</h1>
+                <p>Discover products and services from student entrepreneurs</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products, services, or sellers...">
+                    <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active">All</button>
+                    <button class="filter-tab">Fashion</button>
+                    <button class="filter-tab">Beauty</button>
+                    <button class="filter-tab">Food</button>
+                    <button class="filter-tab">Services</button>
+                    <button class="filter-tab">Handmade</button>
+                </div>
+            </div>
+
+            <div class="marketplace-grid">
+                <!-- Product Cards -->
+                <div class="product-card" onclick="showProductPage('Vintage Denim Jacket', 'Thrift Avenue', 'Kristu Jayanti University', '₹1,299', '4.5', '23', 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=400&fit=crop', 'Classic vintage denim jacket in excellent condition. Perfect size M, fits true to size. Sustainable fashion at its finest!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=300&fit=crop" alt="Vintage Denim Jacket">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Vintage Denim Jacket</h3>
+                        <p class="product-seller">by Thrift Avenue • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (23)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹1,299</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProductPage('Custom Birthday Cake', 'Bake & Bloom', 'Kristu Jayanti University', '₹899', '5.0', '45', 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop', 'Handcrafted with love using premium ingredients. Each cake tells a story. Perfect for campus birthdays and special moments!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Custom Birthday Cake">
+                        <div class="product-badge trending">Trending</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Custom Birthday Cake</h3>
+                        <p class="product-seller">by Bake & Bloom • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (45)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹899</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProductPage('Logo Design Service', 'Pixel Perfect', 'Kristu Jayanti University', '₹2,499', '4.9', '67', 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop', 'Transform your brand with stunning visuals. Professional logo design that tells your story. Multiple revisions included!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Logo Design Service">
+                    </div>
+                    <div class="product-content">
+                        <h3>Logo Design Service</h3>
+                        <p class="product-seller">by Pixel Perfect • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (67)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹2,499</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProductPage('Handmade Jewelry Set', 'Craft Corner', 'Kristu Jayanti University', '₹599', '4.2', '18', 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&h=400&fit=crop', 'Unique handmade jewelry crafted with love. Each piece is one-of-a-kind. Perfect for gifts or personal collection!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop" alt="Handmade Jewelry Set">
+                        <div class="product-badge">Handmade</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Handmade Jewelry Set</h3>
+                        <p class="product-seller">by Craft Corner • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.2 (18)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹599</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProductPage('Portrait Photography', 'Lens Craft', 'Kristu Jayanti University', '₹1,999', '4.8', '31', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500&h=400&fit=crop', 'Professional photography that tells your story. From portraits to events, we make every frame count. Campus delivery available!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=300&fit=crop" alt="Photography Session">
+                    </div>
+                    <div class="product-content">
+                        <h3>Portrait Photography</h3>
+                        <p class="product-seller">by Lens Craft • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (31)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹1,999</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProductPage('Math Tutoring (JEE Prep)', 'Study Hub', 'Kristu Jayanti University', '₹499/hr', '4.7', '52', 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=400&fit=crop', 'Expert JEE Math preparation by senior students. Personalized attention, practice problems, and exam strategies. Success guaranteed!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Math Tutoring">
+                    </div>
+                    <div class="product-content">
+                        <h3>Math Tutoring (JEE Prep)</h3>
+                        <p class="product-seller">by Study Hub • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7 (52)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹499/hr</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProductPage('Organic Skincare Set', 'Glow Up', 'Kristu Jayanti University', '₹799', '4.9', '89', 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&h=400&fit=crop', '100% organic skincare products. Chemical-free, cruelty-free, and perfect for sensitive skin. Glow naturally!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop" alt="Skincare Set">
+                        <div class="product-badge trending">Trending</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Organic Skincare Set</h3>
+                        <p class="product-seller">by Glow Up • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (89)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹799</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="showProductPage('Birthday Event Planning', 'Party Pro', 'Kristu Jayanti University', '₹5,999', '4.3', '27', 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&h=400&fit=crop', 'Complete event planning for birthdays and celebrations. Decoration, catering, coordination - we handle everything!')">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=300&fit=crop" alt="Event Planning">
+                    </div>
+                    <div class="product-content">
+                        <h3>Birthday Event Planning</h3>
+                        <p class="product-seller">by Party Pro • Kristu Jayanti University</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.3 (27)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹5,999</span>
+                            <button class="btn btn-sm btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Page (Seller Dashboard) -->
+    <section class="page" id="sell">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Seller Dashboard</h1>
+                <p>Manage your campus business</p>
+            </div>
+
+            <!-- Verification Status -->
+            <div class="verification-card">
+                <div class="verification-content">
+                    <div class="verification-icon verified">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="verification-info">
+                        <h3>Verified Student</h3>
+                        <p>Kristu Jayanti University • chinmayee.m@kristu.ac.in</p>
+                    </div>
+                    <div class="verification-badge">
+                        <i class="fas fa-shield-alt"></i> Verified
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-rupee-sign"></i></div>
+                    <div class="stat-content">
+                        <h3>₹45,230</h3>
+                        <p>Total Revenue</p>
+                    </div>
+                    <div class="stat-change positive">+23%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <div class="stat-content">
+                        <h3>127</h3>
+                        <p>Total Orders</p>
+                    </div>
+                    <div class="stat-change positive">+15%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-eye"></i></div>
+                    <div class="stat-content">
+                        <h3>2,847</h3>
+                        <p>Profile Views</p>
+                    </div>
+                    <div class="stat-change positive">+31%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <div class="stat-content">
+                        <h3>4.8</h3>
+                        <p>Average Rating</p>
+                    </div>
+                    <div class="stat-change neutral">--</div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <button class="action-card" onclick="showModal('addProduct')">
+                    <div class="action-icon"><i class="fas fa-plus"></i></div>
+                    <h3>Add Product</h3>
+                    <p>List a new item</p>
+                </button>
+                <button class="action-card" onclick="showModal('editProfile')">
+                    <div class="action-icon"><i class="fas fa-edit"></i></div>
+                    <h3>Edit Profile</h3>
+                    <p>Update business info</p>
+                </button>
+                <button class="action-card">
+                    <div class="action-icon"><i class="fas fa-list"></i></div>
+                    <h3>View Orders</h3>
+                    <p>Manage orders</p>
+                </button>
+                <button class="action-card" onclick="showAnalytics()">
+                    <div class="action-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Analytics</h3>
+                    <p>View insights</p>
+                </button>
+            </div>
+
+            <!-- Recent Orders -->
+            <div class="dashboard-section">
+                <h2>Recent Orders</h2>
+                <div class="orders-table">
+                    <div class="order-row">
+                        <div class="order-info">
+                            <h4>Vintage Denim Jacket</h4>
+                            <p>Order #1234 • Rahul Kumar</p>
+                        </div>
+                        <div class="order-status completed">Completed</div>
+                        <div class="order-amount">₹1,299</div>
+                    </div>
+                    <div class="order-row">
+                        <div class="order-info">
+                            <h4>Custom Birthday Cake</h4>
+                            <p>Order #1233 • Anjali Singh</p>
+                        </div>
+                        <div class="order-status processing">Processing</div>
+                        <div class="order-amount">₹899</div>
+                    </div>
+                    <div class="order-row">
+                        <div class="order-info">
+                            <h4>Handmade Jewelry Set</h4>
+                            <p>Order #1232 • Meera Joshi</p>
+                        </div>
+                        <div class="order-status pending">Pending</div>
+                        <div class="order-amount">₹599</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Listings -->
+            <div class="dashboard-section">
+                <h2>My Listings</h2>
+                <div class="listings-grid">
+                    <div class="listing-card">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200&h=150&fit=crop" alt="Vintage Denim Jacket">
+                        <div class="listing-info">
+                            <h4>Vintage Denim Jacket</h4>
+                            <p>₹1,299 • 23 sold</p>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&h=150&fit=crop" alt="Custom Birthday Cake">
+                        <div class="listing-info">
+                            <h4>Custom Birthday Cake</h4>
+                            <p>₹899 • 45 sold</p>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=200&h=150&fit=crop" alt="Handmade Jewelry Set">
+                        <div class="listing-info">
+                            <h4>Handmade Jewelry Set</h4>
+                            <p>₹599 • 18 sold</p>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn-icon"><i class="fas fa-edit"></i></button>
+                            <button class="btn-icon"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Section -->
+            <div class="dashboard-section" id="analyticsSection" style="display: none;">
+                <div class="analytics-header">
+                    <h2>Analytics Dashboard</h2>
+                    <button class="btn btn-sm btn-secondary" onclick="hideAnalytics()"><i class="fas fa-times"></i> Close</button>
+                </div>
+
+                <!-- Revenue Overview -->
+                <div class="analytics-overview">
+                    <div class="analytics-card revenue-card">
+                        <div class="analytics-icon"><i class="fas fa-rupee-sign"></i></div>
+                        <div class="analytics-content">
+                            <h3>₹45,230</h3>
+                            <p>Total Revenue</p>
+                            <span class="analytics-trend positive">+23% vs last month</span>
+                        </div>
+                    </div>
+                    <div class="analytics-card orders-card">
+                        <div class="analytics-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="analytics-content">
+                            <h3>127</h3>
+                            <p>Total Orders</p>
+                            <span class="analytics-trend positive">+15% vs last month</span>
+                        </div>
+                    </div>
+                    <div class="analytics-card customers-card">
+                        <div class="analytics-icon"><i class="fas fa-users"></i></div>
+                        <div class="analytics-content">
+                            <h3>89</h3>
+                            <p>Unique Customers</p>
+                            <span class="analytics-trend positive">+18% vs last month</span>
+                        </div>
+                    </div>
+                    <div class="analytics-card conversion-card">
+                        <div class="analytics-icon"><i class="fas fa-percentage"></i></div>
+                        <div class="analytics-content">
+                            <h3>8.5%</h3>
+                            <p>Conversion Rate</p>
+                            <span class="analytics-trend positive">+2% vs last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales Chart -->
+                <div class="analytics-chart-section">
+                    <h3>Revenue Trend (Last 6 Months)</h3>
+                    <div class="chart-container">
+                        <div class="chart-bar" style="height: 60%;">
+                            <div class="bar-label">Jan</div>
+                            <div class="bar-value">₹18,500</div>
+                        </div>
+                        <div class="chart-bar" style="height: 75%;">
+                            <div class="bar-label">Feb</div>
+                            <div class="bar-value">₹24,200</div>
+                        </div>
+                        <div class="chart-bar" style="height: 45%;">
+                            <div class="bar-label">Mar</div>
+                            <div class="bar-value">₹12,800</div>
+                        </div>
+                        <div class="chart-bar" style="height: 90%;">
+                            <div class="bar-label">Apr</div>
+                            <div class="bar-value">₹32,100</div>
+                        </div>
+                        <div class="chart-bar" style="height: 80%;">
+                            <div class="bar-label">May</div>
+                            <div class="bar-value">₹28,600</div>
+                        </div>
+                        <div class="chart-bar" style="height: 100%;">
+                            <div class="bar-label">Jun</div>
+                            <div class="bar-value">₹45,230</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Products -->
+                <div class="analytics-products-section">
+                    <h3>Top Performing Products</h3>
+                    <div class="top-products-list">
+                        <div class="top-product-item">
+                            <div class="product-rank">1</div>
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=60&h=60&fit=crop" alt="Custom Birthday Cake">
+                            <div class="product-performance">
+                                <h4>Custom Birthday Cake</h4>
+                                <p>45 sold • ₹40,455 revenue</p>
+                            </div>
+                            <div class="product-growth">
+                                <span class="growth-positive">+32%</span>
+                            </div>
+                        </div>
+                        <div class="top-product-item">
+                            <div class="product-rank">2</div>
+                            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=60&h=60&fit=crop" alt="Vintage Denim Jacket">
+                            <div class="product-performance">
+                                <h4>Vintage Denim Jacket</h4>
+                                <p>23 sold • ₹29,877 revenue</p>
+                            </div>
+                            <div class="product-growth">
+                                <span class="growth-positive">+18%</span>
+                            </div>
+                        </div>
+                        <div class="top-product-item">
+                            <div class="product-rank">3</div>
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=60&h=60&fit=crop" alt="Handmade Jewelry Set">
+                            <div class="product-performance">
+                                <h4>Handmade Jewelry Set</h4>
+                                <p>18 sold • ₹10,782 revenue</p>
+                            </div>
+                            <div class="product-growth">
+                                <span class="growth-positive">+24%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Insights -->
+                <div class="analytics-insights-section">
+                    <div class="insight-card">
+                        <h3><i class="fas fa-clock"></i> Peak Hours</h3>
+                        <p>Most orders between 6 PM - 9 PM</p>
+                        <div class="insight-chart">
+                            <div class="time-slot active">6-9 PM</div>
+                            <div class="time-slot">12-3 PM</div>
+                            <div class="time-slot">9-12 PM</div>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Popular Locations</h3>
+                        <p>Top delivery zones on campus</p>
+                        <div class="location-list">
+                            <div class="location-item">
+                                <span>Hostel Block A</span>
+                                <span>34%</span>
+                            </div>
+                            <div class="location-item">
+                                <span>Academic Block</span>
+                                <span>28%</span>
+                            </div>
+                            <div class="location-item">
+                                <span>Sports Complex</span>
+                                <span>22%</span>
+                            </div>
+                            <div class="location-item">
+                                <span>Library Area</span>
+                                <span>16%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <h3><i class="fas fa-star"></i> Customer Satisfaction</h3>
+                        <p>Average rating and reviews</p>
+                        <div class="rating-breakdown">
+                            <div class="rating-row">
+                                <span>5 Stars</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 75%;"></div>
+                                </div>
+                                <span>75%</span>
+                            </div>
+                            <div class="rating-row">
+                                <span>4 Stars</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 18%;"></div>
+                                </div>
+                                <span>18%</span>
+                            </div>
+                            <div class="rating-row">
+                                <span>3 Stars</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 5%;"></div>
+                                </div>
+                                <span>5%</span>
+                            </div>
+                            <div class="rating-row">
+                                <span>2 Stars</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 2%;"></div>
+                                </div>
+                                <span>2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Traffic Sources -->
+                <div class="analytics-traffic-section">
+                    <h3>Traffic Sources</h3>
+                    <div class="traffic-grid">
+                        <div class="traffic-source">
+                            <div class="traffic-icon instagram"><i class="fab fa-instagram"></i></div>
+                            <div class="traffic-info">
+                                <h4>Instagram</h4>
+                                <p>45% of traffic</p>
+                            </div>
+                            <div class="traffic-bar">
+                                <div class="traffic-fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                        <div class="traffic-source">
+                            <div class="traffic-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+                            <div class="traffic-info">
+                                <h4>WhatsApp</h4>
+                                <p>28% of traffic</p>
+                            </div>
+                            <div class="traffic-bar">
+                                <div class="traffic-fill" style="width: 28%;"></div>
+                            </div>
+                        </div>
+                        <div class="traffic-source">
+                            <div class="traffic-icon direct"><i class="fas fa-link"></i></div>
+                            <div class="traffic-info">
+                                <h4>Direct Links</h4>
+                                <p>15% of traffic</p>
+                            </div>
+                            <div class="traffic-bar">
+                                <div class="traffic-fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                        <div class="traffic-source">
+                            <div class="traffic-icon referral"><i class="fas fa-users"></i></div>
+                            <div class="traffic-info">
+                                <h4>Referrals</h4>
+                                <p>12% of traffic</p>
+                            </div>
+                            <div class="traffic-bar">
+                                <div class="traffic-fill" style="width: 12%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Page -->
+    <section class="page" id="services">
+        <div class="container">
+            <div class="page-header">
+                <h1>Services</h1>
+                <p>Find talented student service providers</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" onclick="showProductPage('Logo & Brand Identity', 'Pixel Perfect', 'Kristu Jayanti University', '₹2,499', '4.9', '67', 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop', 'Transform your brand with stunning visuals. Professional logo design that tells your story. Multiple revisions included! Perfect for startups and personal brands.')">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" alt="Graphic Design">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-category">Graphic Design</div>
+                        <h3>Logo & Brand Identity</h3>
+                        <p class="service-provider">by Pixel Perfect • Kristu Jayanti University</p>
+                        <div class="service-rating">
+                            <i class="fas fa-star"></i> 4.9 (67 reviews)
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">Starting ₹2,499</span>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="showProductPage('Portrait Photography Session', 'Lens Craft', 'Kristu Jayanti University', '₹1,999', '4.8', '31', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500&h=400&fit=crop', 'Professional photography that tells your story. From portraits to events, we make every frame count. Campus delivery available! Perfect for LinkedIn profiles and special occasions.')">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=250&fit=crop" alt="Photography">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-category">Photography</div>
+                        <h3>Portrait Photography Session</h3>
+                        <p class="service-provider">by Lens Craft • Kristu Jayanti University</p>
+                        <div class="service-rating">
+                            <i class="fas fa-star"></i> 4.8 (31 reviews)
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">₹1,999/session</span>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="showProductPage('JEE Math Preparation', 'Study Hub', 'Kristu Jayanti University', '₹499', '4.7', '52', 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=400&fit=crop', 'Expert JEE Math preparation by senior students. Personalized attention, practice problems, and exam strategies. Success guaranteed! Flexible timing and campus meeting points available.')">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop" alt="Tutoring">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-category">Tutoring</div>
+                        <h3>JEE Math Preparation</h3>
+                        <p class="service-provider">by Study Hub • Kristu Jayanti University</p>
+                        <div class="service-rating">
+                            <i class="fas fa-star"></i> 4.7 (52 reviews)
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">₹499/hour</span>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="showProductPage('Birthday Event Planning', 'Party Pro', 'Kristu Jayanti University', '₹5,999', '4.3', '27', 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&h=400&fit=crop', 'Complete event planning for birthdays and celebrations. Decoration, catering, coordination - we handle everything! Make your special day memorable with our professional services.')">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=250&fit=crop" alt="Event Planning">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-category">Events</div>
+                        <h3>Birthday Event Planning</h3>
+                        <p class="service-provider">by Party Pro • Kristu Jayanti University</p>
+                        <div class="service-rating">
+                            <i class="fas fa-star"></i> 4.3 (27 reviews)
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">Starting ₹5,999</span>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="showProductPage('Website Development', 'Code Studio', 'Kristu Jayanti University', '₹9,999', '4.6', '41', 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=400&fit=crop', 'Professional website development for your business or personal brand. Modern designs, responsive layouts, and SEO optimization. Perfect for student entrepreneurs and small businesses.')">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Web Development">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-category">Web Development</div>
+                        <h3>Website Development</h3>
+                        <p class="service-provider">by Code Studio • Kristu Jayanti University</p>
+                        <div class="service-rating">
+                            <i class="fas fa-star"></i> 4.6 (41 reviews)
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">Starting ₹9,999</span>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="showProductPage('Social Media Content', 'Wordsmith', 'Kristu Jayanti University', '₹1,499', '4.5', '38', 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500&h=400&fit=crop', 'Engaging social media content that drives results. Posts, captions, hashtags, and content strategy. Perfect for businesses looking to grow their online presence and engagement.')">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=400&h=250&fit=crop" alt="Content Writing">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-category">Content Writing</div>
+                        <h3>Social Media Content</h3>
+                        <p class="service-provider">by Wordsmith • Kristu Jayanti University</p>
+                        <div class="service-rating">
+                            <i class="fas fa-star"></i> 4.5 (38 reviews)
+                        </div>
+                        <div class="service-footer">
+                            <span class="service-price">₹1,499/post</span>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Tools Page -->
+    <section class="page" id="marketing">
+        <div class="container">
+            <div class="page-header">
+                <h1>AI Marketing Assistant</h1>
+                <p>Grow your brand with powerful marketing tools</p>
+            </div>
+
+            <div class="marketing-tools-grid">
+                <div class="marketing-tool-card">
+                    <div class="tool-icon"><i class="fab fa-instagram"></i></div>
+                    <h3>Instagram Caption Generator</h3>
+                    <p>Generate engaging captions for your posts</p>
+                    <button class="btn btn-primary" onclick="showModal('captionGenerator')">Try Now</button>
+                </div>
+
+                <div class="marketing-tool-card">
+                    <div class="tool-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Post Ideas Generator</h3>
+                    <p>Get creative content ideas for your brand</p>
+                    <button class="btn btn-primary" onclick="showModal('postIdeas')">Try Now</button>
+                </div>
+
+                <div class="marketing-tool-card">
+                    <div class="tool-icon"><i class="fas fa-video"></i></div>
+                    <h3>Reel Ideas Generator</h3>
+                    <p>Create viral-worthy reel concepts</p>
+                    <button class="btn btn-primary" onclick="showModal('reelIdeas')">Try Now</button>
+                </div>
+
+                <div class="marketing-tool-card">
+                    <div class="tool-icon"><i class="fas fa-image"></i></div>
+                    <h3>Poster Copy Generator</h3>
+                    <p>Write compelling promotional poster text</p>
+                    <button class="btn btn-primary" onclick="showModal('posterCopy')">Try Now</button>
+                </div>
+
+                <div class="marketing-tool-card">
+                    <div class="tool-icon"><i class="fas fa-box"></i></div>
+                    <h3>Product Description</h3>
+                    <p>Create persuasive product descriptions</p>
+                    <button class="btn btn-primary" onclick="showModal('productDesc')">Try Now</button>
+                </div>
+
+                <div class="marketing-tool-card">
+                    <div class="tool-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Campaign Ideas</h3>
+                    <p>Plan effective marketing campaigns</p>
+                    <button class="btn btn-primary" onclick="showModal('campaignIdeas')">Try Now</button>
+                </div>
+            </div>
+
+            <!-- Example Generated Content -->
+            <div class="example-section">
+                <h2>Example Generated Content</h2>
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-tag">Instagram Caption</span>
+                        <span class="example-product">For: Vintage Denim Jacket</span>
+                    </div>
+                    <div class="example-content">
+                        <p>✨ Vintage vibes, modern style! 🌟</p>
+                        <p>This classic denim jacket has been given a new life. Perfect for adding that cool edge to any outfit. Sustainable fashion at its finest! 🌱</p>
+                        <p>#ThriftFashion #SustainableStyle #CampusFashion #VintageFind #DenimDays</p>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-tag">Product Description</span>
+                        <span class="example-product">For: Custom Birthday Cake</span>
+                    </div>
+                    <div class="example-content">
+                        <p>🎂 Make your birthday unforgettable with our custom-designed cakes!</p>
+                        <p>Each cake is handcrafted with love using premium ingredients. Choose from our signature designs or let us create something unique just for you. Perfect for campus celebrations that leave lasting memories.</p>
+                        <p>✅ Custom designs available<br>✅ Premium quality ingredients<br>✅ Campus delivery</p>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-tag">Reel Idea</span>
+                        <span class="example-product">For: Handmade Jewelry</span>
+                    </div>
+                    <div class="example-content">
+                        <p>📱 Reel Concept: "From Raw to Ready"</p>
+                        <p>• 0-3s: Show raw materials (beads, wire)<br>• 3-6s: Quick craft process montage<br>• 6-9s: Final product reveal<br>• 9-15s: Model wearing the jewelry<br>• Audio: Trending transition sound</p>
+                        <p>Hashtags: #HandmadeJewelry #CraftProcess #BehindTheScenes #SmallBusinessLove</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Page -->
+    <section class="page" id="profile">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-cover">
+                    <div class="profile-avatar">
+                        <img src="chinmayee-profile.png" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop'" alt="Chinmayee M">
+                        <div class="verified-badge"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Chinmayee M</h1>
+                    <p class="profile-business">Thrift Avenue</p>
+                    <p class="profile-college"><i class="fas fa-graduation-cap"></i> Kristu Jayanti University</p>
+                    <p class="profile-bio">Sustainable fashion enthusiast curating vintage pieces for the modern student. Every item has a story to tell. 🌱♻️</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <span>127</span>
+                            <p>Orders</p>
+                        </div>
+                        <div class="profile-stat">
+                            <span>4.8</span>
+                            <p>Rating</p>
+                        </div>
+                        <div class="profile-stat">
+                            <span>2.8K</span>
+                            <p>Views</p>
+                        </div>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Seller</button>
+                        <a href="https://www.instagram.com/chinmayeyeye._?igsi=MWRvZm03NTVqbm9xeQ%3D%3D&utm_source=qr" target="_blank" class="btn btn-secondary"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chinmayee-m-889858430" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/chinmayeeye?s=11" target="_blank" class="btn btn-secondary"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Products -->
+            <div class="profile-section">
+                <h2>Products & Services</h2>
+                <div class="profile-products-grid">
+                    <div class="profile-product-card">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200&h=150&fit=crop" alt="Vintage Denim Jacket">
+                        <div class="profile-product-info">
+                            <h4>Vintage Denim Jacket</h4>
+                            <p>₹1,299</p>
+                        </div>
+                    </div>
+                    <div class="profile-product-card">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=150&fit=crop" alt="Retro Band T-Shirt">
+                        <div class="profile-product-info">
+                            <h4>Retro Band T-Shirt</h4>
+                            <p>₹699</p>
+                        </div>
+                    </div>
+                    <div class="profile-product-card">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=200&h=150&fit=crop" alt="Vintage Leather Bag">
+                        <div class="profile-product-info">
+                            <h4>Vintage Leather Bag</h4>
+                            <p>₹2,499</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="profile-section">
+                <h2>Reviews</h2>
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="Rahul">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Rahul Singh</h4>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="review-date">2 days ago</span>
+                        </div>
+                        <p>Amazing quality denim jacket! Exactly as described. Priya was super helpful with sizing. Will definitely order again! 🙌</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop" alt="Ananya">
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Ananya Verma</h4>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <span class="review-date">1 week ago</span>
+                        </div>
+                        <p>Love the sustainable approach! The vintage bag is in perfect condition. Great find for campus fashion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Page -->
+    <section class="page" id="order">
+        <div class="container">
+            <div class="order-container">
+                <button class="back-btn" onclick="showPage('explore')"><i class="fas fa-arrow-left"></i> Back to Explore</button>
+                
+                <div class="order-layout">
+                    <div class="order-product">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=400&fit=crop" alt="Vintage Denim Jacket">
+                        <div class="product-details">
+                            <h1>Vintage Denim Jacket</h1>
+                            <p class="seller-info">Sold by <strong>Thrift Avenue</strong></p>
+                            <p class="college-info"><i class="fas fa-graduation-cap"></i> Kristu Jayanti University</p>
+                            <div class="product-rating-large">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5 (23 reviews)</span>
+                            </div>
+                            <p class="product-description">Classic vintage denim jacket in excellent condition. Perfect size M, fits true to size. Sustainable fashion at its finest!</p>
+                            <div class="product-price-large">₹1,299</div>
+                        </div>
+                    </div>
+
+                    <div class="order-form">
+                        <h2>Place Your Order</h2>
+                        <form id="orderForm">
+                            <div class="form-group">
+                                <label>Quantity</label>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Size</label>
+                                <select>
+                                    <option>Medium (M)</option>
+                                    <option>Small (S)</option>
+                                    <option>Large (L)</option>
+                                    <option>Extra Large (XL)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Delivery Location</label>
+                                <input type="text" placeholder="Enter your campus location">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label>Additional Notes (Optional)</label>
+                                <textarea placeholder="Any special requests?"></textarea>
+                            </div>
+                            <div class="order-summary">
+                                <div class="summary-row">
+                                    <span>Subtotal</span>
+                                    <span>₹1,299</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Platform Fee (8%)</span>
+                                    <span>₹104</span>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Total</span>
+                                    <span>₹1,403</span>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large" onclick="placeOrder(event)">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Plan Page -->
+    <section class="page" id="premium">
+        <div class="container">
+            <div class="premium-header">
+                <h1>Upgrade to Premium</h1>
+                <p>Grow your campus business faster with premium features</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card basic">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">₹0<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 10 listings</li>
+                        <li><i class="fas fa-check"></i> Basic analytics</li>
+                        <li><i class="fas fa-check"></i> 8% transaction fee</li>
+                        <li><i class="fas fa-check"></i> Standard support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Promoted listings</li>
+                        <li class="disabled"><i class="fas fa-times"></i> AI marketing tools</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Priority support</li>
+                    </ul>
+                    <button class="btn btn-secondary">Current Plan</button>
+                </div>
+
+                <div class="pricing-card premium">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">₹99<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited listings</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> 5% transaction fee</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> 3 promoted listings/month</li>
+                        <li><i class="fas fa-check"></i> AI marketing tools</li>
+                        <li><i class="fas fa-check"></i> Custom branding</li>
+                    </ul>
+                    <button class="btn btn-primary">Upgrade Now</button>
+                </div>
+
+                <div class="pricing-card enterprise">
+                    <div class="pricing-header">
+                        <h3>Campus Pro</h3>
+                        <div class="price">₹299<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Premium</li>
+                        <li><i class="fas fa-check"></i> Unlimited promoted listings</li>
+                        <li><i class="fas fa-check"></i> 3% transaction fee</li>
+                        <li><i class="fas fa-check"></i> Dedicated support</li>
+                        <li><i class="fas fa-check"></i> Team collaboration</li>
+                        <li><i class="fas fa-check"></i> API access</li>
+                        <li><i class="fas fa-check"></i> White-label option</li>
+                    </ul>
+                    <button class="btn btn-secondary">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section class="page" id="admin">
+        <div class="container">
+            <div class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <p>Platform overview and management</p>
+            </div>
+
+            <div class="admin-stats-grid">
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon users"><i class="fas fa-users"></i></div>
+                    <div class="admin-stat-content">
+                        <h3>15,234</h3>
+                        <p>Total Users</p>
+                    </div>
+                    <div class="admin-stat-change positive">+12% this month</div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon sellers"><i class="fas fa-store"></i></div>
+                    <div class="admin-stat-content">
+                        <h3>2,456</h3>
+                        <p>Verified Sellers</p>
+                    </div>
+                    <div class="admin-stat-change positive">+8% this month</div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon listings"><i class="fas fa-box"></i></div>
+                    <div class="admin-stat-content">
+                        <h3>8,923</h3>
+                        <p>Active Listings</p>
+                    </div>
+                    <div class="admin-stat-change positive">+15% this month</div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon orders"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="admin-stat-content">
+                        <h3>12,567</h3>
+                        <p>Total Orders</p>
+                    </div>
+                    <div class="admin-stat-change positive">+20% this month</div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon revenue"><i class="fas fa-rupee-sign"></i></div>
+                    <div class="admin-stat-content">
+                        <h3>₹24,56,789</h3>
+                        <p>Platform Revenue</p>
+                    </div>
+                    <div class="admin-stat-change positive">+18% this month</div>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon reports"><i class="fas fa-flag"></i></div>
+                    <div class="admin-stat-content">
+                        <h3>23</h3>
+                        <p>Reported Listings</p>
+                    </div>
+                    <div class="admin-stat-change negative">+5 this week</div>
+                </div>
+            </div>
+
+            <div class="admin-sections">
+                <div class="admin-section">
+                    <h2>Recent Registrations</h2>
+                    <div class="admin-table">
+                        <div class="admin-table-row">
+                            <div class="table-cell">
+                                <img src="chinmayee-profile.png" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'" alt="">
+                                <div>
+                                    <strong>Chinmayee M</strong>
+                                    <p>Kristu Jayanti University</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">Seller</div>
+                            <div class="table-cell"><span class="status-badge verified">Verified</span></div>
+                        </div>
+                        <div class="admin-table-row">
+                            <div class="table-cell">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop" alt="">
+                                <div>
+                                    <strong>Rahul Singh</strong>
+                                    <p>Kristu Jayanti University</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">Seller</div>
+                            <div class="table-cell"><span class="status-badge pending">Pending</span></div>
+                        </div>
+                        <div class="admin-table-row">
+                            <div class="table-cell">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop" alt="">
+                                <div>
+                                    <strong>Ananya Verma</strong>
+                                    <p>Kristu Jayanti University</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">Buyer</div>
+                            <div class="table-cell"><span class="status-badge verified">Verified</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-section">
+                    <h2>Reported Listings</h2>
+                    <div class="admin-table">
+                        <div class="admin-table-row">
+                            <div class="table-cell">
+                                <strong>Designer Handbag</strong>
+                                <p>by Luxury Finds</p>
+                            </div>
+                            <div class="table-cell">Counterfeit claim</div>
+                            <div class="table-cell"><span class="status-badge warning">Under Review</span></div>
+                        </div>
+                        <div class="admin-table-row">
+                            <div class="table-cell">
+                                <strong>Homemade Food</strong>
+                                <p>by Mom's Kitchen</p>
+                            </div>
+                            <div class="table-cell">Quality issue</div>
+                            <div class="table-cell"><span class="status-badge warning">Under Review</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="addProductModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Product</h2>
+                <button class="modal-close" onclick="closeModal('addProduct')"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" placeholder="Enter product name">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select>
+                        <option>Fashion & Thrift</option>
+                        <option>Beauty</option>
+                        <option>Food & Baking</option>
+                        <option>Handmade Products</option>
+                        <option>Services</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Price (₹)</label>
+                    <input type="number" placeholder="Enter price">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea placeholder="Describe your product"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Product Image</label>
+                    <input type="file" accept="image/*">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="captionGeneratorModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Instagram Caption Generator</h2>
+                <button class="modal-close" onclick="closeModal('captionGenerator')"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Product/Service Name</label>
+                    <input type="text" placeholder="e.g., Vintage Denim Jacket">
+                </div>
+                <div class="form-group">
+                    <label>Tone</label>
+                    <select>
+                        <option>Casual & Fun</option>
+                        <option>Professional</option>
+                        <option>Trendy</option>
+                        <option>Inspirational</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="generateCaption()">Generate Caption</button>
+                <div class="generated-content" id="generatedCaption">
+                    <p>✨ Vintage vibes, modern style! 🌟</p>
+                    <p>This classic denim jacket has been given a new life. Perfect for adding that cool edge to any outfit. Sustainable fashion at its finest! 🌱</p>
+                    <p>#ThriftFashion #SustainableStyle #CampusFashion #VintageFind #DenimDays</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="orderConfirmationModal">
+        <div class="modal-content modal-success">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your order has been placed and will be processed soon. You'll receive a confirmation email shortly.</p>
+            <div class="order-details">
+                <p><strong>Order ID:</strong> #CBH12345</p>
+                <p><strong>Estimated Delivery:</strong> 2-3 business days</p>
+            </div>
+            <button class="btn btn-primary" onclick="closeModal('orderConfirmation'); showPage('explore')">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Post Ideas Modal -->
+    <div class="modal" id="postIdeasModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Post Ideas Generator</h2>
+                <button class="modal-close" onclick="closeModal('postIdeas')"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Your Business/Niche</label>
+                    <input type="text" placeholder="e.g., Fashion, Food, Photography">
+                </div>
+                <div class="form-group">
+                    <label>Content Type</label>
+                    <select>
+                        <option>Product Showcase</option>
+                        <option>Behind the Scenes</option>
+                        <option>Customer Testimonials</option>
+                        <option>Tips & Tricks</option>
+                        <option>Trending Content</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="generatePostIdeas()">Generate Ideas</button>
+                <div class="generated-content" id="generatedPostIdeas">
+                    <p>📱 <strong>Idea 1:</strong> Before & After transformation of your product/service</p>
+                    <p>🎯 <strong>Idea 2:</strong> Day in the life of a campus entrepreneur</p>
+                    <p>💡 <strong>Idea 3:</strong> Customer review spotlight with photos</p>
+                    <p>🔥 <strong>Idea 4:</strong> Trending audio challenge related to your niche</p>
+                    <p>📚 <strong>Idea 5:</strong> Educational content about your craft</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Reel Ideas Modal -->
+    <div class="modal" id="reelIdeasModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Reel Ideas Generator</h2>
+                <button class="modal-close" onclick="closeModal('reelIdeas')"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Product/Service</label>
+                    <input type="text" placeholder="e.g., Handmade Jewelry">
+                </div>
+                <div class="form-group">
+                    <label>Reel Style</label>
+                    <select>
+                        <option>Tutorial/How-to</option>
+                        <option>Transformation</option>
+                        <option>Storytelling</option>
+                        <option>Trending Audio</option>
+                        <option>Behind the Scenes</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="generateReelIdeas()">Generate Reel Ideas</button>
+                <div class="generated-content" id="generatedReelIdeas">
+                    <p>🎬 <strong>Reel Concept 1:</strong> "From Raw to Ready"</p>
+                    <p>• 0-3s: Show raw materials<br>• 3-6s: Quick craft process montage<br>• 6-9s: Final product reveal<br>• 9-15s: Model wearing/using the product<br>• Audio: Trending transition sound</p>
+                    <p>🎬 <strong>Reel Concept 2:</strong> "Customer Reaction"</p>
+                    <p>• Capture genuine customer reactions when they see your product<br>• Use emotional audio<br>• Add text overlays for impact</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Poster Copy Modal -->
+    <div class="modal" id="posterCopyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Poster Copy Generator</h2>
+                <button class="modal-close" onclick="closeModal('posterCopy')"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Event/Offer</label>
+                    <input type="text" placeholder="e.g., Flash Sale, New Product Launch">
+                </div>
+                <div class="form-group">
+                    <label>Key Details</label>
+                    <textarea placeholder="Date, time, location, discount, etc."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Tone</label>
+                    <select>
+                        <option>Exciting & Urgent</option>
+                        <option>Professional</option>
+                        <option>Friendly & Casual</option>
+                        <option>Luxury & Premium</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="generatePosterCopy()">Generate Copy</button>
+                <div class="generated-content" id="generatedPosterCopy">
+                    <p>🚀 <strong>HEADLINE:</strong> LIMITED TIME OFFER!</p>
+                    <p>✨ Get [Product Name] at [Discount]% OFF<br>📅 [Date]<br>📍 [Location]<br>⏰ Don't miss out!</p>
+                    <p>🎁 Special bonus for first 50 customers!</p>
+                    <p>📲 DM to order now!</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Description Modal -->
+    <div class="modal" id="productDescModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Product Description Generator</h2>
+                <button class="modal-close" onclick="closeModal('productDesc')"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" placeholder="e.g., Vintage Denim Jacket">
+                </div>
+                <div class="form-group">
+                    <label>Key Features</label>
+                    <textarea placeholder="Material, size, condition, unique features..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Target Audience</label>
+                    <input type="text" placeholder="e.g., College students, Fashion enthusiasts">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="generateProductDesc()">Generate Description</button>
+                <div class="generated-content" id="generatedProductDesc">
+                    <p>✨ <strong>Product Description:</strong></p>
+                    <p>Elevate your style with this stunning [Product Name]! Perfect for [Target Audience] who appreciate quality and uniqueness.</p>
+                    <p><strong>Key Features:</strong><br>✅ [Feature 1]<br>✅ [Feature 2]<br>✅ [Feature 3]</p>
+                    <p>Each piece is carefully selected/crafted to ensure you stand out. Limited stock available - grab yours before it's gone!</p>
+                    <p>🌟 Why choose us?<br>• Quality guaranteed<br>• Campus delivery available<br>• Student-friendly prices</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Campaign Ideas Modal -->
+    <div class="modal" id="campaignIdeasModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Campaign Ideas Generator</h2>
+                <button class="modal-close" onclick="closeModal('campaignIdeas')"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>Campaign Goal</label>
+                    <select>
+                        <option>Brand Awareness</option>
+                        <option>Sales Boost</option>
+                        <option>New Product Launch</option>
+                        <option>Customer Engagement</option>
+                        <option>Event Promotion</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Budget Level</label>
+                    <select>
+                        <option>Low Budget (Free/Low Cost)</option>
+                        <option>Medium Budget</option>
+                        <option>High Budget</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="generateCampaignIdeas()">Generate Campaign Ideas</button>
+                <div class="generated-content" id="generatedCampaignIdeas">
+                    <p>🎯 <strong>Campaign: "Campus Takeover"</strong></p>
+                    <p><strong>Duration:</strong> 1 week<br><strong>Budget:</strong> Low</p>
+                    <p><strong>Strategy:</strong></p>
+                    <p>• Day 1-2: Teaser posts on Instagram<br>• Day 3-4: Influencer collaborations with campus creators<br>• Day 5-6: User-generated content contest<br>• Day 7: Grand finale with exclusive offers</p>
+                    <p><strong>Hashtags:</strong> #CampusBrandHub #[YourBrand] #CampusLife</p>
+                    <p><strong>Expected Outcome:</strong> Increased engagement, new followers, and sales boost</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Campus Brand Hub</span>
+                    </div>
+                    <p>Build. Brand. Belong.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/chinmayeyeye._?igsi=MWRvZm03NTVqbm9xeQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/chinmayeeye?s=11" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/chinmayee-m-889858430" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <a href="#" onclick="showPage('explore')">Explore</a>
+                    <a href="#" onclick="showPage('sell')">Start Selling</a>
+                    <a href="#" onclick="showPage('services')">Services</a>
+                    <a href="#" onclick="showPage('premium')">Pricing</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Safety Guidelines</a>
+                    <a href="#">Seller Guidelines</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Campus Brand Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
